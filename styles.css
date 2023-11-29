@@ -13,7 +13,7 @@ h1 {
     background-image: url('Images/camera-4123304_1920.jpg');
     background-size: cover;
     background-position: center;
-    height: 50vh; /* Adjust the height as needed */
+    height: 35vh; /* Adjust the height as needed */
     filter: brightness(1.05); /* Adjust the value between 0 and 1 (0 is completely black, 1 is normal) */
 }
 
