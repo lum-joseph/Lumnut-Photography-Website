@@ -3,23 +3,28 @@ h1 {
 }
 
 
-/* Makes the intro section fade in and out when you scroll */
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
-    
-    /* Add background image property */
-    background-image: url('Images/camera-4123304_1920.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 35vh; /* Adjust the height as needed */
-    filter: brightness(1.05); /* Adjust the value between 0 and 1 (0 is completely black, 1 is normal) */
+/* Makes the intro section parallel scroll */
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.fade-in-section.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+.parallax-section {
+    background-image: url('Images/camera-4123304_1920.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+    background-attachment: scroll; /* fixed */
+    background-position: center; /* center */
+    background-repeat: no-repeat;
+    background-size: cover; /* cover */
+    height: 40vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-in-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color if needed */
+    padding: 20px;
 }
 
 
