@@ -1,0 +1,33 @@
+h1 {
+    color: black
+}
+
+
+/* Makes the intro section fade in and out when you scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    
+    /* Add background image property */
+    background-image: url('Images/camera-4123304_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 35vh; /* Adjust the height as needed */
+    filter: brightness(1.05); /* Adjust the value between 0 and 1 (0 is completely black, 1 is normal) */
+}
+
+.fade-in-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Select the h2 and p elements inside the .fade-in-section class and sets their text color */
+.fade-in-section h2, .fw-light {
+    color: #282727; /* grey color */
+}
+
+h2, .lead-text-body-secondary {
+    color: #282828; /* White color */
+}
